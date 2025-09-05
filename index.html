@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Divinity | Divine Aesthetic Experience</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-0"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand divine-logo" href="#home">
+                <span class="logo-text">Nature's Divinity</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#themes">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative overflow-hidden">
+        <div class="hero-background">
+            <div class="parallax-layer" data-speed="0.2"></div>
+            <div class="parallax-layer" data-speed="0.5"></div>
+            <div class="parallax-layer" data-speed="0.8"></div>
+        </div>
+        
+        <div class="divine-overlay"></div>
+        
+        <!-- Floating Orbs -->
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+        
+        <!-- Mystical Leaves -->
+        <div class="mystical-leaves">
+            <div class="leaf" data-aos="fade-up" data-aos-delay="1000">🍃</div>
+            <div class="leaf" data-aos="fade-up" data-aos-delay="1500">🌿</div>
+            <div class="leaf" data-aos="fade-up" data-aos-delay="2000">🍂</div>
+            <div class="leaf" data-aos="fade-up" data-aos-delay="2500">🌱</div>
+        </div>
+        
+        <div class="hero-content text-center position-relative z-10">
+            <div class="container">
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="divine-text">Discover Nature's</span>
+                    <span class="gradient-text">Divinity</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">
+                    Journey through ethereal landscapes and divine natural wonders
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
+                    <button class="divine-btn primary-btn me-3" onclick="scrollToSection('themes')">
+                        <span>Begin Sacred Journey</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                    <button class="divine-btn secondary-btn">
+                        <i class="fas fa-play me-2"></i>
+                        <span>Watch Experience</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="2000">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Divine Themes Section -->
+    <section id="themes" class="themes-section position-relative py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="divine-accent">Sacred</span> Themes
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Explore the divine manifestations of nature's beauty
+                </p>
+                <div class="section-divider" data-aos="fade-up" data-aos-delay="400"></div>
+            </div>
+            
+            <div id="themesContainer" class="row g-4">
+                <!-- Dynamic themes will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Gallery -->
+    <section id="gallery" class="gallery-section position-relative py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="divine-accent">Mystical</span> Gallery
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Witness the divine artistry of Mother Nature
+                </p>
+                <div class="section-divider" data-aos="fade-up" data-aos-delay="400"></div>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Dynamic gallery items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Divine Quote Section -->
+    <section class="quote-section position-relative py-5 text-center">
+        <div class="quote-background"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <blockquote class="divine-quote" data-aos="fade-up">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="quote-text" id="dynamicQuote">
+                            "In every walk with nature, one receives far more than they seek."
+                        </p>
+                        <footer class="quote-author" id="quoteAuthor">
+                            - John Muir
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section position-relative py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="divine-accent">Divine</span> Experience
+                </h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Immerse yourself in nature's sacred energy
+                </p>
+                <div class="section-divider" data-aos="fade-up" data-aos-delay="400"></div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="experience-content">
+                        <h3 class="experience-title">Transcendent Journey</h3>
+                        <p class="experience-text">
+                            Embark on a spiritual journey through nature's most sacred spaces. 
+                            Each moment is designed to connect you with the divine essence of our planet.
+                        </p>
+                        <div class="experience-features">
+                            <div class="feature-item">
+                                <i class="fas fa-leaf feature-icon"></i>
+                                <span>Sacred Forest Meditation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mountain feature-icon"></i>
+                                <span>Mountain Peak Enlightenment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-water feature-icon"></i>
+                                <span>Ocean Wave Harmony</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="experience-visual">
+                        <div class="visual-card floating">
+                            <div class="card-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Divine Experience" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="divine-footer position-relative">
+        <div class="footer-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h5 class="brand-name">Nature's Divinity</h5>
+                        <p class="brand-description">
+                            Connecting souls with the sacred essence of nature through 
+                            divine aesthetic experiences.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Sacred Connections</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Join Our Journey</h5>
+                    <p class="newsletter-text">Receive divine inspirations from nature</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" 
+                                   placeholder="Your sacred email">
+                            <button class="btn newsletter-btn" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 Nature's Divinity. All rights reserved. Made with 🌿 for Mother Earth</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
