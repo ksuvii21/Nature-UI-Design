@@ -2,7 +2,7 @@
 
 Welcome to **Nature's Divinity**, a beautifully designed website that blends modern web effects with the calming elegance of nature. Featuring smooth parallax scrolling, floating animations, and dynamic theme cards, this project is perfect for showcasing aesthetic visuals and experimenting with interactive UI effects. <br>
 
-🔗 **Live at:** [https://github.com/ksuvii21/Nature-UI-Design](https://github.com/your-username/nature-aesthetic-website) <br>
+🔗 **Live at:** [https://github.com/ksuvii21/Nature-UI-Design](https://ksuvii21.github.io/Nature-UI-Design/) <br>
 
 ---
 
